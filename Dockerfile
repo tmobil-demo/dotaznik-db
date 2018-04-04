@@ -11,6 +11,7 @@ ADD https://raw.githubusercontent.com/tmobil-demo/dotaznik/master/db/my.cnf /etc
 ADD https://raw.githubusercontent.com/tmobil-demo/dotaznik/master/db/setupdb.sql /opt
 
 RUN mysql_install_db --user=mysql
+
 RUN bash /opt/setupdb.sh
 
 EXPOSE 3306
